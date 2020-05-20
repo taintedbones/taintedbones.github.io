@@ -18,10 +18,12 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 55px;
+  width: inherit;
 }
 
 .App-link {
@@ -37,10 +39,104 @@
   }
 }
 
-.Menu-Dropdown {
-  align-self: right;
+.Top-Nav {
+  width: 100%;
+  justify-items: right;
+  align-items: right ;
 }
 
-Navbar {
+.About-Me-Container, .Experience-Container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-Me-Container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #282c34;
+  width: inherit;
+}
+
+.Exp-Card {
+  max-width: 18rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Card-Text {
+  height: 13vh;
+}
+
+.Header-Pic {
+  max-height: 30vh;
+  max-width: 30vh;
+  padding: 10px 10px 10px 10px;
+  width: inherit;
+}
+
+.About-Pic {
+  width: inherit;
+  max-width: 370px;
+  margin-bottom: 20px;
+}
+
+.Header-Row {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Header-Pic-Col {
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.Name-Text {
+  font-size: 160;
+}
+
+.About-Paragraph-Col {
+  justify-content: center;
+  align-items: center;
+  max-width: 40vh;
+}
+
+.btn-link {
+  color: white; 
+}
+
+.Header-Row {
+  align-items: center;
+}
+
+.Body-Row {
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.Section-Header {
+  padding-bottom: 10px;
+}
+
+.Exp-Img {
+  padding: 25px;
+}
+
+.Drop-Down-Div {
   width: 100%;
+  display: flex;
+  justify-items: right;
+  align-items: right;
 }
