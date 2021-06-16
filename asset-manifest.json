@@ -1,32 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.c008dd2a.chunk.css",
-    "main.js": "/static/js/main.462d2cc4.chunk.js",
-    "main.js.map": "/static/js/main.462d2cc4.chunk.js.map",
+    "main.css": "/static/css/main.90be2520.chunk.css",
+    "main.js": "/static/js/main.5be77cf4.chunk.js",
+    "main.js.map": "/static/js/main.5be77cf4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b1936a44.js",
     "runtime-main.js.map": "/static/js/runtime-main.b1936a44.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.3be34a2d.chunk.js": "/static/js/2.3be34a2d.chunk.js",
-    "static/js/2.3be34a2d.chunk.js.map": "/static/js/2.3be34a2d.chunk.js.map",
+    "static/js/2.607e865e.chunk.js": "/static/js/2.607e865e.chunk.js",
+    "static/js/2.607e865e.chunk.js.map": "/static/js/2.607e865e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.209b336446cd4d7a523fa9d2cdd3c614.js": "/precache-manifest.209b336446cd4d7a523fa9d2cdd3c614.js",
+    "precache-manifest.bf2d97ad765d70a064fe97c49a0610bf.js": "/precache-manifest.bf2d97ad765d70a064fe97c49a0610bf.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.c008dd2a.chunk.css.map": "/static/css/main.c008dd2a.chunk.css.map",
-    "static/js/2.3be34a2d.chunk.js.LICENSE.txt": "/static/js/2.3be34a2d.chunk.js.LICENSE.txt",
+    "static/css/main.90be2520.chunk.css.map": "/static/css/main.90be2520.chunk.css.map",
+    "static/js/2.607e865e.chunk.js.LICENSE.txt": "/static/js/2.607e865e.chunk.js.LICENSE.txt",
     "static/media/about-photo.jpg": "/static/media/about-photo.8e1d2205.jpg",
-    "static/media/App.css": "/static/media/header-bg.be19621f.jpg",
-    "static/media/header-photo.JPG": "/static/media/header-photo.d8f45bbf.JPG",
-    "static/media/index.png": "/static/media/index.8661adae.png",
+    "static/media/header-photo.jpg": "/static/media/header-photo.77f75fc1.jpg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-    "static/media/space-invader.png": "/static/media/space-invader.bff9b2ca.png",
     "static/media/super-mario.png": "/static/media/super-mario.f9987801.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b1936a44.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.3be34a2d.chunk.js",
-    "static/css/main.c008dd2a.chunk.css",
-    "static/js/main.462d2cc4.chunk.js"
+    "static/js/2.607e865e.chunk.js",
+    "static/css/main.90be2520.chunk.css",
+    "static/js/main.5be77cf4.chunk.js"
   ]
 }
