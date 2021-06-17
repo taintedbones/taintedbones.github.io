@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import SuperMarioIcon from './assets/super-mario.png';
 import MapIcon from './assets/index.png';
 import InvaderIcon from './assets/space-invader.png';
@@ -102,6 +101,17 @@ function App() {
               </Card.Text>
               <Button variant="secondary"
                       href="https://github.com/TheSoullessOne/Mario_Levels">Github</Button>
+            </Card.Body>
+          </Card>
+          <Card className="Exp-Card">
+            <Card.Img variant="top" src={InvaderIcon} className="Exp-Img"></Card.Img>
+            <Card.Body>
+              <Card.Title>Space Invaders Emulator</Card.Title>
+              <Card.Text className="Card-Text">
+                An emulator of the classic arcade game, Space Invaders. 
+              </Card.Text>
+              <Button variant="secondary"
+                      href="https://github.com/taintedbones/space-invaders">Github</Button>
             </Card.Body>
           </Card>
           <Card className="Exp-Card">

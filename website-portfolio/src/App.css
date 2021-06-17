@@ -103,6 +103,7 @@
 
 .Name-Text {
   font-size: 160;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .About-Paragraph-Col {
@@ -139,4 +140,8 @@
   display: flex;
   justify-items: right;
   align-items: right;
+}
+
+.h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
