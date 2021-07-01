@@ -1,5 +1,32 @@
 .App {
   /* text-align: center; */
+  display: inline;
+}
+
+.App-header {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      white
+    ),
+    url("assets/neon-pattern.jpg");
+  background-position: top;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  /* margin-top: 55px; */
+  width: inherit;
+}
+
+.App-link {
+  color: white;
 }
 
 .App-logo {
@@ -13,23 +40,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  margin-top: 55px;
-  width: inherit;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,19 +49,41 @@
   }
 }
 
-.Top-Nav {
-  width: 100%;
-  justify-items: right;
-  align-items: right ;
-}
-
-.About-Me-Container, .Experience-Container {
+.About-Me-Container,
+.Experience-Container {
   padding-top: 40px;
   padding-bottom: 40px;
   align-items: center;
   justify-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.About-Paragraph-Col {
+  justify-content: center;
+  align-items: center;
+  max-width: 40vh;
+}
+
+.About-Pic {
+  width: inherit;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.Body-Row {
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.btn-link {
+  color: white;
+}
+
+.Card-Text {
+  height: 13vh;
 }
 
 .Contact-Me-Container {
@@ -66,14 +98,19 @@
   width: inherit;
 }
 
-.Exp-Card {
-  max-width: 18rem;
-  margin-left: 10px;
-  margin-right: 10px;
+.Drop-Down-Div {
+  width: 100%;
+  display: flex;
+  justify-items: right;
+  align-items: right;
 }
 
-.Card-Text {
-  height: 13vh;
+.Exp-Card {
+  height: auto;
+}
+
+.Exp-Img {
+  padding: 25px;
 }
 
 .Header-Pic {
@@ -83,10 +120,11 @@
   width: inherit;
 }
 
-.About-Pic {
-  width: inherit;
-  max-width: 370px;
-  margin-bottom: 20px;
+.Header-Pic-Col {
+  height: inherit;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .Header-Row {
@@ -95,53 +133,25 @@
   text-align: center;
 }
 
-.Header-Pic-Col {
-  height: inherit;
-  align-items: center;
-  justify-content: center;
+.Header-Title {
+  padding-top: 20px;
+}
+
+.h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .Name-Text {
   font-size: 160;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.About-Paragraph-Col {
-  justify-content: center;
-  align-items: center;
-  max-width: 40vh;
-}
-
-.btn-link {
-  color: white; 
-}
-
-.Header-Row {
-  align-items: center;
-}
-
-.Body-Row {
-  padding-left: 10px;
-  padding-right: 10px;
-  align-items: center;
-  justify-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .Section-Header {
   padding-bottom: 10px;
 }
 
-.Exp-Img {
-  padding: 25px;
-}
-
-.Drop-Down-Div {
+.Top-Nav {
   width: 100%;
-  display: flex;
   justify-items: right;
   align-items: right;
-}
-
-.h1 {
-  font-family:Georgia, 'Times New Roman', Times, serif;
 }
