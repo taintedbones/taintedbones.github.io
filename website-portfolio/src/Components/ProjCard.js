@@ -4,9 +4,13 @@ import Card from "react-bootstrap/Card";
 import { Button, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
+  grid: {
+    height: "100%",
+  },
+    paper: {
     position: "relative",
     height: "100%",
+    width:"100%",
     padding: "10px",
   },
 }));
@@ -18,7 +22,7 @@ function ProjCard(props) {
     <React.Fragment>
       <Grid item container xs={12} sm={6} md={3}>
         <Paper elevation={5} className={classes.paper}>
-          <Grid item container spacing={2}>
+          <Grid item container className={classes.grid} spacing={1} justify="space-between">
             <Grid item xs={12}>
               <Typography variant="h3">
                 <props.icon />
@@ -26,12 +30,13 @@ function ProjCard(props) {
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h5">{props.title}</Typography>
+              <Typography variant="overline">{props.resources}</Typography>
             </Grid>
             <Grid item xs={12}>
               <Typography variant="body2">{props.text}</Typography>
             </Grid>
             <Grid item xs={12}>
-              <Button variant="contained" color="primary" href={props.url}>
+              <Button variant="contained" color="primary" href={props.url} target="_blank">
                 Github
               </Button>
             </Grid>
@@ -39,28 +44,6 @@ function ProjCard(props) {
         </Paper>
       </Grid>
     </React.Fragment>
-    // <Card className="Exp-Card">
-    //   <Card.Body>
-    //     <Card.Title>
-    //       <center>
-    //         <h1>
-    //           <props.icon />
-    //         </h1>
-    //       </center>
-    //     </Card.Title>
-    //     <Card.Title>{props.title}</Card.Title>
-    //     <Card.Text className="Card-Text">
-    //       {props.text}
-    //     </Card.Text>
-    //   </Card.Body>
-    //   <Button
-    //     variant="secondary"
-    //     href={props.url}
-    //     className="Card-Button"
-    //   >
-    //     Github
-    //   </Button>
-    // </Card>
   );
 }
 
