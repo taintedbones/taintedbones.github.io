@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as Scroll from 'react-scroll';
 import Contact from './Components/Contact.js';
 import Projects from './Components/Projects.js';
 import AboutMe from './Components/AboutMe.js';
