@@ -1,14 +1,9 @@
-import React, { Component } from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+import React from "react";
 import ProjCard from "./ProjCard.js";
 import { Grid, makeStyles } from "@material-ui/core";
 
-import { GiDiceTwentyFacesTwenty } from "react-icons/gi";
-import { GiTurtleShell } from "react-icons/gi";
+import { GiDiceTwentyFacesTwenty, GiRingedPlanet, GiSpaceship } from "react-icons/gi";
 import { FaMapMarkedAlt } from "react-icons/fa";
-import { GiSpaceship } from "react-icons/gi";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +21,7 @@ function Projects() {
         <ProjCard
           icon={FaMapMarkedAlt}
           title="Midzo"
+          resources="Typescript, HTML, CSS, Angular, MongoDB"
           text="Long distance meetings have never been easier! Just enter
                   two locations and the meeting type. We'll find the perfect
                   middle point for you, as well as a list of business
@@ -35,19 +31,22 @@ function Projects() {
         <ProjCard
           icon={GiSpaceship}
           title="Space Invaders Emulator"
+          resources="Python, Pygame"
           text="An emulator of the classic arcade game, Space Invaders."
           url="https://github.com/taintedbones/space-invaders"
         />
         <ProjCard
           icon={GiDiceTwentyFacesTwenty}
           title="DnD Initiative Tracker"
+          resources="CPP, QT, SQLITE"
           text="test"
           url="http://www.google.com/"
         />
         <ProjCard
-          icon={GiDiceTwentyFacesTwenty}
+          icon={GiRingedPlanet}
           title="Space Geo"
-          text="test"
+          resources="Javascript, React, Material UI"
+          text="An educational website highlighting how scientists use geological practices to study our solar system. Discusses the geology of each planet, our Moon, and the technologies used in space to gather data."
           url="http://www.google.com/"
         />
       </Grid>
