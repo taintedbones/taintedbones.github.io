@@ -1,7 +1,6 @@
 import React from "react";
 import ProjCard from "./ProjCard.js";
 import { Grid, makeStyles } from "@material-ui/core";
-
 import { GiDiceTwentyFacesTwenty, GiRingedPlanet, GiSpaceship } from "react-icons/gi";
 import { FaMapMarkedAlt } from "react-icons/fa";
 
@@ -40,14 +39,17 @@ function Projects() {
           title="DnD Initiative Tracker"
           resources="CPP, QT, SQLITE"
           text="test"
-          url="http://www.google.com/"
+          url="https://github.com/taintedbones/Dnd-Combat-Tracker"
         />
         <ProjCard
           icon={GiRingedPlanet}
           title="Space Geo"
           resources="Javascript, React, Material UI"
-          text="An educational website highlighting how scientists use geological practices to study our solar system. Discusses the geology of each planet, our Moon, and the technologies used in space to gather data."
-          url="http://www.google.com/"
+          text="An educational website highlighting how scientists use 
+                geological practices to study our solar system. Discusses 
+                the geology of each planet, our Moon, and the technologies 
+                used in space to gather data."
+          url="https://github.com/taintedbones/space-geo"
         />
       </Grid>
     </div>
