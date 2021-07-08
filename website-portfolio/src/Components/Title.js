@@ -1,40 +1,66 @@
-import React, { Component } from "react";
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import { DiGithubBadge } from 'react-icons/di';
-import { AiFillLinkedin } from 'react-icons/ai';
-import Image from 'react-bootstrap/Image';
-import HeaderPic from '../assets/header-photo.jpg';
-import '../App.css';
+import React from "react";
+import { DiGithubBadge } from "react-icons/di";
+import { AiFillLinkedin } from "react-icons/ai";
+import HeaderPic from "../assets/header-photo.jpg";
+import bgPic from "../assets/neon-pattern.jpg";
+import { Grid, makeStyles, Typography, Link } from "@material-ui/core";
 
-class Title extends Component {
-  render() {
-    return (
-      // <header className="App-header">
-        <Row>
-          <div className="Header-Title">
-            <Row className="Header-Row">
-              <Image src={HeaderPic} roundedCircle className="Header-Pic"></Image>
-            </Row>
-            <Row className="Header-Row">
-              <h1 className="Name-Text">Kierstyn Just</h1>
-            </Row>
-            <Row className="Header-Row">
-              <h4>Software Engineer</h4>
-            </Row>
-            <Row className="Header-Row">
-              <Button href="https://github.com/taintedbones"
-                className="App-link"
-                variant="link"><h1><DiGithubBadge /></h1></Button>
-              <Button href="https://www.linkedin.com/in/kierstynjust/"
-                className="App-link"
-                variant="link"><h1><AiFillLinkedin /></h1></Button>
-            </Row>
-          </div>
-        </Row>
-      // </header>
-    )
-  }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    alignItems: "center",
+    minHeight: "600px",
+    backgroundImage:
+      "linear-gradient(to bottom, transparent, transparent, transparent, transparent, white), url(" +
+      bgPic +
+      ")",
+    backgroundPosition: "top",
+    flexDirection: "column",
+    color: "white",
+    paddingTop: "20px",
+  },
+  img: {
+    borderRadius: "50%",
+    maxWidth: "300px",
+  },
+  link: {
+    color: "white",
+  },
+  nameText: {
+    fontFamily: "Georgia, 'Times New Roman', Times, serif",
+  },
+}));
+
+function Title() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <img src={HeaderPic} className={classes.img} />
+      <Typography variant="h3" className={classes.nameText}>
+        Kierstyn Just
+      </Typography>
+      <Typography variant="h5">Computer Scientist</Typography>
+      <Typography variant="h3">
+        <Link
+          href="https://github.com/taintedbones"
+          target="_blank"
+          rel="noreferrer"
+          className={classes.link}
+        >
+          <DiGithubBadge />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/kierstynjust/"
+          target="_blank"
+          rel="noreferrer"
+          className={classes.link}
+        >
+          <AiFillLinkedin />
+        </Link>
+      </Typography>
+    </div>
+  );
 }
 
 export default Title;
