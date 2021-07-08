@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     width: "inherit",
     padding: "20px",
   },
+  header: {
+    fontFamily: "Georgia, 'Times New Roman', Times, serif",
+  },
   link: {
     color: "white",
   },
@@ -23,7 +26,7 @@ function Contact() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4">Contact Me</Typography>
+      <Typography variant="h4" className={classes.header}>Contact Me</Typography>
       <Typography variant="body2">
         <Link href="mailto:kjust@csu.fullerton.edu" className={classes.link}>
           <AiOutlineMail /> kjust@csu.fullerton.edu
