@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.90be2520.chunk.css",
-    "main.js": "/static/js/main.5be77cf4.chunk.js",
-    "main.js.map": "/static/js/main.5be77cf4.chunk.js.map",
+    "main.css": "/static/css/main.c34011e2.chunk.css",
+    "main.js": "/static/js/main.908f1e47.chunk.js",
+    "main.js.map": "/static/js/main.908f1e47.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b1936a44.js",
     "runtime-main.js.map": "/static/js/runtime-main.b1936a44.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.607e865e.chunk.js": "/static/js/2.607e865e.chunk.js",
-    "static/js/2.607e865e.chunk.js.map": "/static/js/2.607e865e.chunk.js.map",
+    "static/js/2.6fe7292e.chunk.js": "/static/js/2.6fe7292e.chunk.js",
+    "static/js/2.6fe7292e.chunk.js.map": "/static/js/2.6fe7292e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bf2d97ad765d70a064fe97c49a0610bf.js": "/precache-manifest.bf2d97ad765d70a064fe97c49a0610bf.js",
+    "precache-manifest.7b0fc98167c354e82fac2e5691738806.js": "/precache-manifest.7b0fc98167c354e82fac2e5691738806.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.90be2520.chunk.css.map": "/static/css/main.90be2520.chunk.css.map",
-    "static/js/2.607e865e.chunk.js.LICENSE.txt": "/static/js/2.607e865e.chunk.js.LICENSE.txt",
-    "static/media/about-photo.jpg": "/static/media/about-photo.8e1d2205.jpg",
+    "static/css/main.c34011e2.chunk.css.map": "/static/css/main.c34011e2.chunk.css.map",
+    "static/js/2.6fe7292e.chunk.js.LICENSE.txt": "/static/js/2.6fe7292e.chunk.js.LICENSE.txt",
+    "static/media/about-photo.jpg": "/static/media/about-photo.fd1c87af.jpg",
     "static/media/header-photo.jpg": "/static/media/header-photo.77f75fc1.jpg",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-    "static/media/super-mario.png": "/static/media/super-mario.f9987801.png"
+    "static/media/App.css": "/static/media/neon-pattern.4e54571f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b1936a44.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.607e865e.chunk.js",
-    "static/css/main.90be2520.chunk.css",
-    "static/js/main.5be77cf4.chunk.js"
+    "static/js/2.6fe7292e.chunk.js",
+    "static/css/main.c34011e2.chunk.css",
+    "static/js/main.908f1e47.chunk.js"
   ]
 }
