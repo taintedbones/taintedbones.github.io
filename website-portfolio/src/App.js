@@ -1,26 +1,32 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Contact from './Components/Contact.js';
-import Projects from './Components/Projects.js';
-import AboutMe from './Components/AboutMe.js';
-import Title from './Components/Title.js';
-import TopNav from './Components/TopNav.js';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./Components/Contact.js";
+import Projects from "./Components/Projects.js";
+import AboutMe from "./Components/AboutMe.js";
+import Title from "./Components/Title.js";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  root: {},
+  body: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "inherit",
+    paddingTop: "30px",
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      {/* <Navbar className="Top-Nav" fixed="top" bg="dark" variant="dark" expand="md">
-        <Navbar.Brand>Kierstyn Just</Navbar.Brand>
-
-      </Navbar> */}
-      <header className="App-header">
-        {/* <TopNav /> */}
-        <Title />
-      </header>
-
-      <AboutMe />
-      <Projects />
+    <div className={classes.root}>
+      <Title />
+      <div className={classes.body}>
+        <AboutMe />
+        <Projects />
+      </div>
       <Contact />
     </div>
   );
