@@ -1,12 +1,20 @@
 import React from "react";
 import ProjCard from "./ProjCard.js";
-import { Grid, makeStyles } from "@material-ui/core";
-import { GiDiceTwentyFacesTwenty, GiRingedPlanet, GiSpaceship } from "react-icons/gi";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
+import {
+  GiDiceTwentyFacesTwenty,
+  GiRingedPlanet,
+  GiSpaceship,
+} from "react-icons/gi";
 import { FaMapMarkedAlt } from "react-icons/fa";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: "20px",
+    maxWidth: "1000px",
+  },
+  header: {
+    fontFamily: "Georgia, 'Times New Roman', Times, serif",
   },
 }));
 
@@ -15,16 +23,15 @@ function Projects() {
 
   return (
     <div className={classes.root}>
-      <h3 className="Name-Text">Projects</h3>
+      <Typography variant="h4" className={classes.header} paragraph>
+        Projects
+      </Typography>
       <Grid container justify="center" spacing={2}>
         <ProjCard
           icon={FaMapMarkedAlt}
           title="Midzo"
           resources="Typescript, HTML, CSS, Angular, MongoDB"
-          text="Long distance meetings have never been easier! Just enter
-                  two locations and the meeting type. We'll find the perfect
-                  middle point for you, as well as a list of business
-                  recommendations."
+          text="A web application for planning long ditance meetings."
           url="https://github.com/BrChung/MeetHalfway"
         />
         <ProjCard
@@ -38,7 +45,7 @@ function Projects() {
           icon={GiDiceTwentyFacesTwenty}
           title="DnD Initiative Tracker"
           resources="CPP, QT, SQLITE"
-          text="test"
+          text="A desktop application for tracking combat stats and initiatives for Dungeons and Dragons"
           url="https://github.com/taintedbones/Dnd-Combat-Tracker"
         />
         <ProjCard
@@ -46,9 +53,7 @@ function Projects() {
           title="Space Geo"
           resources="Javascript, React, Material UI"
           text="An educational website highlighting how scientists use 
-                geological practices to study our solar system. Discusses 
-                the geology of each planet, our Moon, and the technologies 
-                used in space to gather data."
+                geological practices to study our solar system."
           url="https://github.com/taintedbones/space-geo"
         />
       </Grid>
