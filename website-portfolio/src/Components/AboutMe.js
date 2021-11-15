@@ -1,21 +1,23 @@
-import React from "react";
-import { Grid, makeStyles, Typography } from "@material-ui/core";
-import AboutPic from "../assets/about-photo.jpg";
+import React from 'react';
+import { Grid, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import AboutPic from '../assets/about-photo.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "1000px",
-    padding: "20px",
+    maxWidth: '1000px',
+    padding: '20px',
   },
   grid: {
-    width: "inherit",
+    width: 'inherit',
   },
   header: {
     fontFamily: "Georgia, 'Times New Roman', Times, serif",
   },
   img: {
-    width: "100%",
-    maxWidth: "450px",
+    width: '100%',
+    maxWidth: '450px',
+    borderRadius: '2%',
   },
 }));
 
@@ -46,12 +48,11 @@ function AboutMe() {
             Before entering the world of programming, I was studying Fine Art
             and earned Associate's Degrees in four different fields. Pairing my
             art knowledge with a strong programming background, I am currently
-            focusing these skills on game development and web development. When
-            I'm not programming
+            focusing these skills on game development and web development.
           </Typography>
           <Typography variant="body2">
-            I enjoy traveling, watching horror movies, playing video games, and
-            brewery hopping!
+            When I'm not programming I enjoy traveling, watching horror movies,
+            playing video games, and brewery hopping! 
           </Typography>
         </Grid>
       </Grid>

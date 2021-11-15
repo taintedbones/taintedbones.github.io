@@ -1,10 +1,11 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./Components/Contact.js";
 import Projects from "./Components/Projects.js";
 import AboutMe from "./Components/AboutMe.js";
 import Title from "./Components/Title.js";
-import { makeStyles } from "@material-ui/core";
+import { createTheme } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import "@fontsource/roboto";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -14,11 +15,18 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     width: "inherit",
     paddingTop: "30px",
+    paddingBottom: "30px",
   },
 }));
 
 function App() {
   const classes = useStyles();
+
+  const darkTheme = createTheme({ 
+    palette: {
+      mode: 'dark',
+    }, 
+  });
 
   return (
     <div className={classes.root}>

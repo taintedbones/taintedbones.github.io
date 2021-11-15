@@ -1,7 +1,14 @@
 import React from "react";
-import { Button, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
+import { Button, Grid, Paper, Typography } from "@mui/material"; 
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
+  button: {
+    backgroundColor: "#7c2d84",
+    '&:hover': {
+      backgroundColor: "#c12e99",
+    }
+  },
   grid: {
     height: "100%",
   },
@@ -48,6 +55,7 @@ function ProjCard(props) {
                 color="primary"
                 href={props.url}
                 target="_blank"
+                className={classes.button}
               >
                 Github
               </Button>

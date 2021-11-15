@@ -1,6 +1,7 @@
 import React from "react";
 import ProjCard from "./ProjCard.js";
-import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import {
   GiDiceTwentyFacesTwenty,
   GiRingedPlanet,
@@ -26,7 +27,7 @@ function Projects() {
       <Typography variant="h4" className={classes.header} paragraph>
         Projects
       </Typography>
-      <Grid container justify="center" spacing={2}>
+      <Grid container justifyContent="center" spacing={4}>
         <ProjCard
           icon={FaMapMarkedAlt}
           title="Midzo"
@@ -54,7 +55,7 @@ function Projects() {
           resources="Javascript, React, Material UI"
           text="An educational website highlighting how scientists use 
                 geological practices to study our solar system."
-          url="https://github.com/taintedbones/space-geo"
+          url="https://github.com/taintedbones/space-geo/tree/dev"
         />
       </Grid>
     </div>

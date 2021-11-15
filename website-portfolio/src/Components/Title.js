@@ -3,7 +3,8 @@ import { DiGithubBadge } from "react-icons/di";
 import { AiFillLinkedin } from "react-icons/ai";
 import HeaderPic from "../assets/header-photo.jpg";
 import bgPic from "../assets/neon-pattern.jpg";
-import { Grid, makeStyles, Typography, Link } from "@material-ui/core";
+import { Typography, Link } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     color: "white",
+    '&:hover': {
+      color: "#c12e99"
+    },
   },
   nameText: {
     fontFamily: "Georgia, 'Times New Roman', Times, serif",
@@ -43,7 +47,7 @@ function Title() {
       <Typography variant="h5">Computer Scientist</Typography>
       <Typography variant="h3">
         <Link
-          href="https://github.com/taintedbones"
+          href="https://github.com/taintedbones"  
           target="_blank"
           rel="noreferrer"
           className={classes.link}

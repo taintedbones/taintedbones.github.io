@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, makeStyles, Typography } from "@material-ui/core";
+import { Link, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { AiOutlineMail } from "react-icons/ai";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyItems: "center",
     color: "white",
-    backgroundColor: "#282c34",
+    backgroundColor: "#050405",
     width: "inherit",
     padding: "20px",
   },
