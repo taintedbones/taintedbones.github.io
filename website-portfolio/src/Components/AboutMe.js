@@ -3,18 +3,13 @@ import { DiGithubBadge } from 'react-icons/di';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { Grid, Link, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { keyframes } from '@mui/system';
+import { keyframes, maxWidth } from '@mui/system';
 import AboutPic from '../assets/about-pic.PNG';
-
-const blink = keyframes`
-  from { opacity: 0; }
-  to { opacity: 1; }
-`;
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '1000px',
-    padding: '20px',
+    padding: '50px 20px 20px',
   },
   grid: {
     width: 'inherit',
@@ -36,7 +31,7 @@ function AboutMe() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className="about-me" style={{maxWidth: '1000px', padding: '50px 20px 20px'}}>
       <Grid
         container
         alignItems="flex-start"

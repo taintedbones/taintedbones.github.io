@@ -65,7 +65,7 @@ function ProjCard(props) {
             <Grid item container spacing={1} justifyContent="flex-start">
               <Grid item>
                 <Button
-                  variant="outlined"
+                  variant="text"
                   color="primary"
                   href={props.url}
                   target="_blank"
@@ -77,7 +77,7 @@ function ProjCard(props) {
               {props.link && (
                 <Grid item>
                   <Button
-                    variant="outlined"
+                    variant="text"
                     color="primary"
                     href={props.link}
                     target="_blank"

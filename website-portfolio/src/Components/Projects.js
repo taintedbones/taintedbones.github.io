@@ -25,7 +25,7 @@ function Projects() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className="projects" style={{ padding: '20px', maxWidth: '1000px' }}>
       <Typography
         variant="h4"
         className={classes.header}
