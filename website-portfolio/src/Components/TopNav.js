@@ -1,45 +1,45 @@
-// import React, { Component } from "react";
-// import { Link, animateScroll as scroll } from 'react-scroll';
-// import Navbar from 'react-bootstrap/Navbar';
-// import Nav from 'react-bootstrap/Nav';
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Box, Button, Toolbar, Typography } from '@mui/material';
 
-// class TopNav extends Component {
-//     render () {
-//         return (
-//             <div>
-//             <Navbar collapseOnSelect expand="md" className="Top-Nav" fixed="top" variant="dark">
-//             <Navbar.Brand>Kierstyn Just</Navbar.Brand>
-//             <Navbar.Toggle></Navbar.Toggle>
-//             <Navbar.Collapse>
-//               <div className="Nav-Buttons">
-//                 <Nav.Link>
-//                     <Link
-//                         activeClass="active" 
-//                         to="about"
-//                         spy={true}
-//                         smooth={true}
-//                         offset={-70}
-//                         duration={500}>
-//                         About
-//                     </Link> 
-//                 </Nav.Link>
-//                 <Nav.Link>
-//                     <Link
-//                         activeClass="active"
-//                         to="experience"
-//                         spy={true}
-//                         smooth={true}
-//                         offset={-70}
-//                         duration={500}>
-//                         Experience
-//                     </Link>
-//                 </Nav.Link>
-//               </div>
-//             </Navbar.Collapse>
-//           </Navbar>
-//           </div>
-//         )
-//     }
-// }
+function TopNav() {
+  return (
+    <Box
+      sx={{
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        // backgroundColor: 'white',
+        backgroundImage:
+          'linear-gradient(to bottom, black, black, black, transparent)',
+      }}
+    >
+      <Toolbar variant="dense" sx={{ width: '100%', justifyContent: "flex-end" }}>
+        <Link
+          activeClass="active"
+          to="about-me"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          style={{ padding: '2px' }}
+        >
+          <Button variant="outlined" size="medium">About</Button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          style={{ padding: '2px' }}
+        >
+          <Button variant="outlined" size="medium">Projects</Button>
+        </Link>
+      </Toolbar>
+    </Box>
+  );
+}
 
-// export default TopNav;
+export default TopNav;
