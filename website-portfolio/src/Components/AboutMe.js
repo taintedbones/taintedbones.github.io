@@ -68,7 +68,7 @@ function AboutMe() {
           </Typography>
           <Typography variant="body2" paragraph>
             I'm currently an undergraduate studying Computer Science at
-            California State University, Fullerton.
+            California State University, Fullerton. 
           </Typography>
           <Typography variant="body2" paragraph>
             Before entering the world of programming, I was studying Fine Art
