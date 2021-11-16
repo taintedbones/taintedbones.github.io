@@ -1,41 +1,46 @@
-import React from "react";
-import Contact from "./Components/Contact.js";
-import Projects from "./Components/Projects.js";
-import AboutMe from "./Components/AboutMe.js";
-import Title from "./Components/Title.js";
-import { createTheme } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-import "@fontsource/roboto";
+import React from 'react';
+import Contact from './Components/Contact.js';
+import Projects from './Components/Projects.js';
+import AboutMe from './Components/AboutMe.js';
+import Title from './Components/Title.js';
+import TechSkills from './Components/TechSkills.js';
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import '@fontsource/roboto';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
   body: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "inherit",
-    paddingTop: "30px",
-    paddingBottom: "30px",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: 'inherit',
+    paddingTop: '30px',
+    paddingBottom: '30px',
   },
 }));
 
 function App() {
   const classes = useStyles();
 
-  const darkTheme = createTheme({ 
+  const darkTheme = createTheme({
     palette: {
       mode: 'dark',
-    }, 
+    },
   });
 
   return (
     <div className={classes.root}>
-      <Title />
-      <div className={classes.body}>
-        <AboutMe />
-        <Projects />
-      </div>
-      <Contact />
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Title />
+        <div className={classes.body}>
+          <AboutMe />
+          {/* <TechSkills /> */}
+          <Projects />
+        </div>
+        <Contact />
+      </ThemeProvider>
     </div>
   );
 }

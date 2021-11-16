@@ -1,7 +1,4 @@
 import React from "react";
-import { DiGithubBadge } from "react-icons/di";
-import { AiFillLinkedin } from "react-icons/ai";
-import HeaderPic from "../assets/header-photo.jpg";
 import bgPic from "../assets/neon-pattern.jpg";
 import { Typography, Link } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -10,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     alignItems: "center",
-    minHeight: "600px",
+    minHeight: "200px",
     backgroundImage:
-      "linear-gradient(to bottom, transparent, transparent, transparent, transparent, white), url(" +
+      "linear-gradient(to bottom, transparent, transparent, #121212), url(" +
       bgPic +
       ")",
     backgroundPosition: "top",
@@ -40,8 +37,7 @@ function Title() {
 
   return (
     <div className={classes.root}>
-      <img src={HeaderPic} className={classes.img} />
-      <Typography variant="h3" className={classes.nameText}>
+      {/* <Typography variant="h3" className={classes.nameText}>
         Kierstyn Just
       </Typography>
       <Typography variant="h5">Computer Scientist</Typography>
@@ -62,7 +58,7 @@ function Title() {
         >
           <AiFillLinkedin />
         </Link>
-      </Typography>
+      </Typography> */}
     </div>
   );
 }
