@@ -1,39 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Container from 'react-bootstrap/Container';
+import Contact from './Components/Contact.js';
+import Projects from './Components/Projects.js';
+import AboutMe from './Components/AboutMe.js';
+import Title from './Components/Title.js';
+import TechSkills from './Components/TechSkills.js';
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import '@fontsource/roboto';
+
+const useStyles = makeStyles((theme) => ({
+  root: {},
+  body: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: 'inherit',
+    paddingTop: '30px',
+    paddingBottom: '30px',
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar fixed="top" bg="dark" variant="dark">
-          <Navbar.Brand>Kierstyn Just</Navbar.Brand>
-          <DropdownButton className="Menu-Dropdown" variant="secondary" title="Menu">
-            <Dropdown.Item eventKey="1">About Me</Dropdown.Item>
-            <Dropdown.Item eventKey="2">Experience</Dropdown.Item>
-            <Dropdown.Item eventKey="3">Contact Me</Dropdown.Item>
-          </DropdownButton>
-        </Navbar>
-        <Container>
-          <h1>Kierstyn Just</h1>
-          <h4>Software Engineer</h4>
-        </Container>
-      </header>
-      <Container>
-        <h3>About Me</h3>
-      </Container>
-      <Container>
-        <h3>Experience</h3>
-      </Container>
-      <Container>
-        <h3>Contact Me</h3>
-      </Container>
+    <div className={classes.root}>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Title />
+        <div className={classes.body}>
+          <AboutMe />
+          {/* <TechSkills /> */}
+          <Projects />
+        </div>
+        <Contact />
+      </ThemeProvider>
     </div>
   );
 }
