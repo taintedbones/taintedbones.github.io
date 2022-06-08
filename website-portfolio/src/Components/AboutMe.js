@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "400px",
     borderRadius: "50%",
   },
+  link: {
+    textDecoration: "none",
+  },
   text: {
     color: "#ffb3ec",
   },
@@ -88,6 +91,7 @@ function AboutMe() {
                 target="_blank"
                 rel="noreferrer"
                 className={classes.link}
+                underline="none"
               >
                 <Button variant="outlined" startIcon={<DiGithubBadge />}>
                   Github
@@ -95,11 +99,16 @@ function AboutMe() {
               </Link>
             </Grid>
             <Grid item>
-              <a href={ResumeDoc} download>
+              {/* <a href={ResumeDoc} download>
                 <Button variant="outlined" startIcon={<FiDownload />}>
                   Resume
                 </Button>
-              </a>
+              </a> */}
+              <Link href={ResumeDoc} download className={classes.link} underline="none">
+                <Button variant="outlined" startIcon={<FiDownload />}>
+                  Resume
+                </Button>
+              </Link>
             </Grid>
           </Grid>
         </Grid>
