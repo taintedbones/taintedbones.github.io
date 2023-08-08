@@ -104,9 +104,27 @@ function AboutMe() {
                   Resume
                 </Button>
               </a> */}
-              <Link href={ResumeDoc} download className={classes.link} underline="none">
+              <Link
+                href={ResumeDoc}
+                download
+                className={classes.link}
+                underline="none"
+              >
                 <Button variant="outlined" startIcon={<FiDownload />}>
                   Resume
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link
+                href="https://www.linkedin.com/in/kierstynjust/"
+                target="_blank"
+                rel="noreferrer"
+                className={classes.link}
+                underline="none"
+              >
+                <Button variant="outlined" startIcon={<AiFillLinkedin />}>
+                  LinkedIn
                 </Button>
               </Link>
             </Grid>
