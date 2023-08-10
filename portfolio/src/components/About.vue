@@ -3,7 +3,11 @@
 </script>
 
 <template>
-    Das about me is a workinnnnnn
+    <div>
+        <v-sheet>
+            Das about me is a workinnnnnn
+        </v-sheet>
+    </div>
 </template>
 
 <style>

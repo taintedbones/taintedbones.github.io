@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import About from './components/About.vue'
+import Projects from './components/Projects.vue'
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import About from './components/About.vue'
 
   <!-- <RouterView /> -->
   <About />
+  <Projects />
 </template>
 
 <style scoped>
