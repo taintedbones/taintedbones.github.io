@@ -3,30 +3,34 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
+import NavBar from './components/NavBar.vue'
 </script>
 
 <template>
-  <!-- <header> -->
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper"> -->
-      <!-- <HelloWorld msg="You did it!" /> -->
-      <!-- <About />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      test test test. okay cool.
-    </div>
-  </header> -->
-
-  <!-- <RouterView /> -->
-  <About />
-  <Projects />
+  <div class="app-root">
+    <NavBar />
+    <v-container class="bg-surface-variant mb-6 app-container">
+      <v-row align="center">
+        <About />
+      </v-row>
+      <v-row>
+        <Projects />
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <style scoped>
+.app-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
