@@ -1,10 +1,10 @@
 import React from 'react';
-import Contact from './Components/Contact.js';
-import Projects from './Components/Projects.js';
-import AboutMe from './Components/AboutMe.js';
-import Title from './Components/Title.js';
-import TopNav from './Components/TopNav.js';
-import TechSkills from './Components/TechSkills.js';
+import Contact from './Components/Contact.jsx';
+import Projects from './Components/Projects.jsx';
+import AboutMe from './Components/AboutMe.jsx';
+import Title from './Components/Title.jsx';
+import TopNav from './Components/TopNav.jsx';
+import TechSkills from './Components/TechSkills.jsx';
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import '@fontsource/roboto';

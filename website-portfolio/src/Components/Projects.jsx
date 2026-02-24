@@ -1,5 +1,5 @@
 import React from "react";
-import ProjCard from "./ProjCard.js";
+import ProjCard from "./ProjCard.jsx";
 import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import {
