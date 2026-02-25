@@ -6,7 +6,7 @@ import { Button, Grid, Link, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { keyframes, maxWidth } from "@mui/system";
 import ResumeDoc from "../assets/Kierstyn-Just-Resume.pdf";
-import AboutPic from "../assets/about-pic.PNG";
+import AboutPic from "../assets/about-photo.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: "100%",
     maxWidth: "400px",
-    borderRadius: "50%",
+    borderRadius: "1%",
   },
   link: {
     textDecoration: "none",
@@ -40,29 +40,22 @@ function AboutMe() {
       className="about-me"
       style={{ maxWidth: "1000px", padding: "50px 20px 20px" }}
     >
-      <Grid
-        container
-        alignItems="flex-start"
-        justify="center"
-        spacing={3}
-        className={classes.grid}
-      >
-        <Grid item xs={12} sm={6} md={6}>
+      <Grid container spacing={3}>
+        <Grid size={{xs:12, sm: 6, md: 6}}>
           <img src={AboutPic} className={classes.img} />
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
-          <Typography
+        <Grid size={{xs:12, sm: 6, md: 6}}>
+            <Typography
             variant="h4"
             fontFamily="'Lucida Console', 'Courier New', monospace"
             className={classes.header}
           >
             Hello, my name is
-          </Typography>
-          <Typography
+            </Typography>
+            <Typography
             variant="h4"
             fontFamily="'Lucida Console', 'Courier New', monospace"
             className={classes.header}
-            paragraph
           >
             Kierstyn Just.
           </Typography>
@@ -84,9 +77,10 @@ function AboutMe() {
             When I'm not programming I enjoy traveling, watching horror movies,
             playing video games, and brewery hopping!
           </Typography>
-          <Grid item container spacing={2}>
-            <Grid item>
-              <Link
+        </Grid>
+        <Grid container spacing={2} size={{xs:12, sm: 6, md: 6}}>
+          <Grid>
+            <Link
                 href="https://github.com/taintedbones"
                 target="_blank"
                 rel="noreferrer"
@@ -97,19 +91,13 @@ function AboutMe() {
                   Github
                 </Button>
               </Link>
-            </Grid>
-            <Grid item>
-              {/* <a href={ResumeDoc} download>
-                <Button variant="outlined" startIcon={<FiDownload />}>
-                  Resume
-                </Button>
-              </a> */}
-              <Link href={ResumeDoc} download className={classes.link} underline="none">
+          </Grid>
+          <Grid>
+            <Link href={ResumeDoc} download className={classes.link} underline="none">
                 <Button variant="outlined" startIcon={<FiDownload />}>
                   Resume
                 </Button>
               </Link>
-            </Grid>
           </Grid>
         </Grid>
       </Grid>
