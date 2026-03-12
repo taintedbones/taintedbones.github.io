@@ -1,10 +1,7 @@
-import React from "react";
 import { DiGithubBadge } from "react-icons/di";
 import { FiDownload } from "react-icons/fi";
-import { AiFillLinkedin } from "react-icons/ai";
 import { Button, Grid, Link, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { keyframes, maxWidth } from "@mui/system";
 import ResumeDoc from "../assets/Kierstyn-Just-Resume.pdf";
 import AboutPic from "../assets/about-photo.jpg";
 
@@ -59,45 +56,46 @@ function AboutMe() {
           >
             Kierstyn Just.
           </Typography>
-          <Typography variant="h6" className={classes.text} paragraph>
-            Software Engineer / Full-Stack Web Developer
+          <Typography variant="body2" className={classes.text} paragraph>
+            I'm a Full-Stack Software Engineer currently working on web-based desktop and 
+            mobile applications (iOS & Android).
           </Typography>
           <Typography variant="body2" paragraph>
-            I graduated from California State University, Fullerton with a B.S.
-            in Computer Science.
+            I graduated from California State University, Fullerton with a Bachelor's of Science
+            in Computer Science, and have a background in art.
           </Typography>
           <Typography variant="body2" paragraph>
-            Before entering the world of programming, I was studying Fine Art
-            and earned Associate's Degrees in four different fields. Pairing my
+            Before entering the world of programming, I earned Associate's Degrees in four different 
+            art related fields, ranging from Illustration to Design. Pairing my
             art and design knowledge with a strong programming background, I am
             currently focusing these skills on software engineering and
-            full-stack web development.
+            full-stack web development, working on web-based desktop and mobile applications.
           </Typography>
           <Typography variant="body2" paragraph>
-            When I'm not programming I enjoy traveling, watching horror movies,
-            playing video games, and brewery hopping!
+            When I'm not programming I enjoy traveling, watching horror movies, reading, and
+            exploring museums.
           </Typography>
-        </Grid>
-        <Grid container spacing={2} size={{xs:12, sm: 6, md: 6}}>
-          <Grid>
-            <Link
-                href="https://github.com/taintedbones"
-                target="_blank"
-                rel="noreferrer"
-                className={classes.link}
-                underline="none"
-              >
-                <Button variant="outlined" startIcon={<DiGithubBadge />}>
-                  Github
-                </Button>
-              </Link>
-          </Grid>
-          <Grid>
-            <Link href={ResumeDoc} download className={classes.link} underline="none">
-                <Button variant="outlined" startIcon={<FiDownload />}>
-                  Resume
-                </Button>
-              </Link>
+          <Grid container spacing={2}>
+            <Grid>
+              <Link
+                  href="https://github.com/taintedbones"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.link}
+                  underline="none"
+                >
+                  <Button variant="outlined" startIcon={<DiGithubBadge />}>
+                    Github
+                  </Button>
+                </Link>
+            </Grid>
+            <Grid>
+              <Link href={ResumeDoc} download className={classes.link} underline="none">
+                  <Button variant="outlined" startIcon={<FiDownload />}>
+                    Resume
+                  </Button>
+                </Link>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

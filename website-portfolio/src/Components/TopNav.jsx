@@ -24,7 +24,9 @@ function TopNav() {
           duration={500}
           style={{ padding: '2px' }}
         >
-          <Button variant="outlined" size="medium">About</Button>
+          <Button variant="text" size="medium">
+            About
+          </Button>
         </Link>
         <Link
           activeClass="active"
@@ -35,7 +37,7 @@ function TopNav() {
           duration={500}
           style={{ padding: '2px' }}
         >
-          <Button variant="outlined" size="medium">Projects</Button>
+          <Button variant="text" size="medium">Projects</Button>
         </Link>
       </Toolbar>
     </Box>

@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
 function Title() {
   const classes = useStyles();
 
-  // return <div className={classes.root}></div>;
   return(
     <Box className={classes.root}></Box>
   );

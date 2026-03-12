@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Chip, Grid, Paper, Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@mui/styles'; 
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -26,44 +26,43 @@ function ProjCard(props) {
   return (
     <React.Fragment>
       <Grid
-        item
         container
         xs={12}
         sm={6}
+        size={{xs: 12, sm: 6}}
         alignItems="center"
         justifyContent="space-evenly"
       >
         <Paper elevation={5} className={classes.paper}>
-          <Grid item container className={classes.grid} spacing={2}>
+          <Grid container className={classes.grid} spacing={2}>
             <Grid
-              item
               container
-              xs={12}
+              size={{xs:12}}
               spacing={1}
               justifyContent="flex-start"
               alignItems="center"
             >
-              <Grid item>
+              <Grid>
                 <Typography variant="h3">
                   <props.icon />
                 </Typography>
               </Grid>
-              <Grid item>
+              <Grid>
                 <Typography variant="h5">{props.title}</Typography>
               </Grid>
             </Grid>
-            <Grid item container xs={12} spacing={1}>
+            <Grid container xs={12} spacing={1}>
               {props.resources.map((item) => 
                 <Grid item>
-                  <Chip size="small" variant="outlined" label={item} />
+                  <Chip size="small" variant="outlined" label={item} key={item} />
                 </Grid>
               )}
             </Grid>
-            <Grid item xs={12}>
+            <Grid xs={12}>
               <Typography variant="body2">{props.text}</Typography>
             </Grid>
-            <Grid item container spacing={1} justifyContent="flex-start">
-              <Grid item>
+            <Grid container spacing={1} justifyContent="flex-start">
+              <Grid>
                 <Button
                   variant="text"
                   color="primary"
@@ -75,7 +74,7 @@ function ProjCard(props) {
                 </Button>
               </Grid>
               {props.link && (
-                <Grid item>
+                <Grid>
                   <Button
                     variant="text"
                     color="primary"
